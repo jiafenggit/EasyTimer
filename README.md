@@ -33,7 +33,9 @@ make -j2
   /* 
    * Will run demo class every 2 seconds. 
    * second parameter "true" means that this 
-   * timer will repeat.
+   * timer will repeat. If set to false,
+   * it will only run once before being removed
+   * from pending timers.
    */
 
   Demo* demo1 = new Demo(2, true);
