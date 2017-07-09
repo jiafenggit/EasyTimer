@@ -1,4 +1,4 @@
-# A simple timer in C++
+# EasyTimer: A simple timer in C++
 
 CC                  =   g++
 CFLAGS              =   -std=c++14  -O2 -fPIC -pipe  -pedantic  -Wformat=2 
