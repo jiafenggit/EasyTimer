@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "timerengine.hpp"
 
 Manager* Engine = NULL;
@@ -49,6 +50,8 @@ void Manager::loop()
 
                         this->Timers.Synchronize(this->current_time.tv_sec);
                 }
+                    
+                sleep(1);
         }
         while (true);
 }
