@@ -1,0 +1,76 @@
+#include "timerengine.hpp"
+
+Manager* Engine = NULL;
+
+Manager::Manager()
+{
+     Engine = this;
+}
+
+void Manager::UpdateTime()
+{
+       struct timeval tv;
+       gettimeofday(&tv, NULL);
+       this->current_time.tv_sec = tv.tv_sec;
+}
+
+class Demo : public Timer
+{
+    public:
+       
+       Demo(unsigned int trigger, bool repeat) : Timer(trigger, repeat)
+       {
+       
+       }
+       
+       bool Tick(time_t current_time)
+       {	
+               std::cout << "Testing demo, interval is set to: " << this->get_interval() << std::endl;
+       }
+};
+
+void Manager::loop()
+{
+   this->UpdateTime();
+        
+        time_t previous_time = this->current_time.tv_sec;
+
+        /* Main loop. Keeps UnderInstance running. */
+
+        do
+        {
+                this->UpdateTime();
+                
+                if (this->current_time.tv_sec != previous_time)
+                {
+                        previous_time = this->current_time.tv_sec;
+                        
+                        /* Tick timers */
+
+                        this->Timers.Synchronize(this->current_time.tv_sec);
+                }
+        }
+        while (true);
+}
+
+
+int main()
+{
+       
+       new Manager();
+       Demo* demo1 = new Demo(2, true);
+       
+       Engine->Timers.Push(demo1);
+       
+       Demo* demo2 = new Demo(10, true);
+       
+       Engine->Timers.Push(demo2);
+       
+       Demo* demo3 = new Demo(5, false);
+       
+       Engine->Timers.Push(demo3);
+       
+       /* Let's loop. */
+       
+       Engine->loop();
+}
