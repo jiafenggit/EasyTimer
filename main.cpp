@@ -58,14 +58,21 @@ int main()
 {
        
        new Manager();
+       
+       /* Meant to run in two seconds from current time. Repeating set to true. */
+       
        Demo* demo1 = new Demo(2, true);
        
+       /* Adds timer to timer's queue vector */
+     
        Engine->Timers.Push(demo1);
        
        Demo* demo2 = new Demo(10, true);
        
        Engine->Timers.Push(demo2);
        
+       /* Meant to run in five seconds from now. This timer will only have one cycle */
+     
        Demo* demo3 = new Demo(5, false);
        
        Engine->Timers.Push(demo3);
