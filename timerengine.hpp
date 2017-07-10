@@ -15,7 +15,7 @@ class Manager;
 
 /* 
  * A multimap is used as a queues of timers, given that we might have
- * two timers that will trigger at the same time.
+ * two times (keys) that will trigger in the same tick.
  */
 
 typedef std::multimap<time_t, Timer*> TimerList;
