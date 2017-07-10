@@ -5,7 +5,7 @@ Manager* Engine = NULL;
 
 Manager::Manager()
 {
-     Engine = this;
+       Engine = this;
 }
 
 void Manager::UpdateTime()
