@@ -10,14 +10,17 @@
 #include <time.h>
 #include <sys/time.h>
 
-
 class Timer;
 class Manager;
+
+/* 
+ * A multimap is used, given that we might have
+ * two timers at the same time.
+ */
 
 typedef std::multimap<time_t, Timer*> TimerList;
 
 extern Manager* Engine;
-
 
 class Timer
 {
