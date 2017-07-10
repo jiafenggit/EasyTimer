@@ -11,7 +11,7 @@ To compile, run
 make -j2
 ```
 
-### Example:
+### Example (main.cpp):
 
 ```C++
  
