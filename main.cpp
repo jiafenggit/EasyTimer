@@ -56,7 +56,6 @@ void Manager::loop()
         while (true);
 }
 
-
 int main()
 {
        new Manager();
