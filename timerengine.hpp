@@ -14,7 +14,7 @@ class Timer;
 class Manager;
 
 /* 
- * A multimap is used, given that we might have
+ * A multimap is used as a queues of timers, given that we might have
  * two timers that will trigger at the same time.
  */
 
