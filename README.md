@@ -8,7 +8,7 @@ processes at a later time.
 To compile, run 
 
 ```
-make -j2
+make 
 ```
 
 ### Example (main.cpp):
