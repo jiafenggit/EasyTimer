@@ -13,4 +13,4 @@ timerengine.o:
 
 clean:
 	rm -vf *.o 
-	rm -rf main
+	rm -vf main
