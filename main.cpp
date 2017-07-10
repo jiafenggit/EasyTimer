@@ -37,7 +37,8 @@ class Demo : public Timer
                      rep = "This is the last time that this timer will run";
                }
                
-               std::cout << "Testing demo, interval is set to: " << this->get_interval() << " " << rep << std::endl;
+               std::cout << "Testing demo, interval is set to: " << this->get_interval() << ": " << rep << std::endl;
+               return true;
        }
 };
 
