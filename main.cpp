@@ -48,7 +48,7 @@ void Manager::loop()
         
         time_t previous_time = this->current_time.tv_sec;
 
-        /* Main loop. Keeps UnderInstance running. */
+        /* Main loop. Keeps Engine running. */
 
         do
         {
