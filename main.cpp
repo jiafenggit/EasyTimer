@@ -26,7 +26,18 @@ class Demo : public Timer
        
        bool Tick(time_t current_time)
        {	
-               std::cout << "Testing demo, interval is set to: " << this->get_interval() << std::endl;
+               std::string rep;
+               
+               if (this->is_set_to_repeat())
+               {
+                     rep = "This timer will repeat";
+               }
+               else
+               {
+                     rep = "This is the last time that this timer will run";
+               }
+               
+               std::cout << "Testing demo, interval is set to: " << this->get_interval() << " " << rep << std::endl;
        }
 };
 
