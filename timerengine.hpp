@@ -15,7 +15,7 @@ class Manager;
 
 /* 
  * A multimap is used, given that we might have
- * two timers at the same time.
+ * two timers that will trigger at the same time.
  */
 
 typedef std::multimap<time_t, Timer*> TimerList;
