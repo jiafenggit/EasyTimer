@@ -19,7 +19,7 @@ make
  {
     public:
 
-       Demo(unsigned int trigger, bool repeat) : Timer(trigger, repeat)
+       Demo(unsigned int trigger, bool repeat = true) : Timer(trigger, repeat)
        {
 
        }
