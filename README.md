@@ -1,4 +1,4 @@
-### EasyTimer: A basic timer in C++
+### EasyTimer: A basic, yet useful timer.
 
 This is a basic timer written in C++. You might use it to run and/or repeat 
 processes at a later time.
