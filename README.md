@@ -1,6 +1,6 @@
 ### EasyTimer: A basic, yet useful timer.
 
-This is a timer written in C++. You might use it to run and/or repeat 
+This is a timer written in C++. You might use it in order to run and/or repeat 
 processes at a later time.
 
 ### Compiling:
