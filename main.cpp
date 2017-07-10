@@ -32,7 +32,7 @@ class Demo : public Timer
 
 void Manager::loop()
 {
-   this->UpdateTime();
+        this->UpdateTime();
         
         time_t previous_time = this->current_time.tv_sec;
 
