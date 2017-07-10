@@ -30,11 +30,11 @@ class Demo : public Timer
                
                if (this->is_set_to_repeat())
                {
-                     rep = "This timer will repeat";
+                     rep = "This timer will repeat.";
                }
                else
                {
-                     rep = "This is the last time that this timer will run";
+                     rep = "This is the last time that this timer will run.";
                }
                
                std::cout << "Testing demo, interval is set to: " << this->get_interval() << ": " << rep << std::endl;
