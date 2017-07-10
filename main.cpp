@@ -59,7 +59,6 @@ void Manager::loop()
 
 int main()
 {
-       
        new Manager();
        
        /* Meant to run in two seconds from current time. Repeating set to true. */
