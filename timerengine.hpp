@@ -47,7 +47,7 @@ class Timer
 	
 	virtual ~Timer();
 
-	/* Retrieve the current triggering time */
+	/* Retrieve current triggering time */
 	
 	time_t get_trigger() const
 	{
