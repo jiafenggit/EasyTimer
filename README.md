@@ -31,7 +31,7 @@ make
  };
 
   /* 
-   * Will run Demo class every 2 seconds. 
+   * Will run Tick() function in Demo class every 2 seconds. 
    * Second parameter is set to "true", which means 
    * that this timer will unlimitedly repeat. If set to false,
    * it will only run once before being removed
