@@ -30,7 +30,7 @@ class Demo : public Timer
                
                if (this->is_set_to_repeat())
                {
-                     rep = "This timer will repeat.";
+                     rep = "This timer will repeat in " + std::to_string(this->get_interval()) + " seconds";
                }
                else
                {
