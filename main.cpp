@@ -63,7 +63,7 @@ void Manager::loop()
                         this->Timers.Synchronize(this->current_time.tv_sec);
                 }
                     
-                usleep(1000);
+                usleep(3000);
         }
         while (true);
 }
